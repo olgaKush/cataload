@@ -10,30 +10,45 @@
       </ul>
     </div>
   <% end %>
-
-  <div class="field">
-    <%= f.label :name %><br>
-    <%= f.text_field :name %>
+    <div class="row field">
+      <div class="col-sm-2">
+       <%= f.label :name %>
+     </div>
+      <div class="col-sm-4">
+        <%= f.text_field :name, :class => "form-control" %>
+      </div>
+    </div>
+    <div class="row field">
+          <div class="col-sm-2">
+       <%= f.label :color %><br>
+     </div>
+      <div class="col-sm-4">
+        <%= f.text_field :color, :class => "form-control" %>
+      </div>
+    </div>
+        <div class="row field">
+           <div class="col-sm-2">
+       <%= f.label :race %><br>
+     </div>
+      <div class="col-sm-4">
+        <%= f.text_field :race, :class => "form-control" %>
+      </div>
+    </div>
+  <div class="row field">
+      <div class="col-sm-2">
+       <%= f.label :gender %><br>
+     </div>
+    <div class="col-sm-4">
+      <%= f.radio_button :gender, :male, :checked => true %>
+      <%= f.label :gender_male, 'Male' %>
+      <%= f.radio_button :gender, :female %>
+      <%= f.label :gender_female, 'Female' %>
+    </div>
   </div>
-  <div class="field">
-    <%= f.label :color %><br>
-    <%= f.text_field :color %>
-  </div>
-  <div class="field">
-    <%= f.label :race %><br>
-    <%= f.text_field :race %>
-  </div>
-  <div class="field">
-    <%= f.label :gender %><br>
-    <%= f.radio_button :gender, :male, :checked => true %>
-    <%= f.label :gender_male, 'Male' %>
-    <%= f.radio_button :gender, :female %>
-    <%= f.label :gender_female, 'Female' %>
-  </div>
-  <div class="field">
-    <%= f.label :image %><br>
+  <div class="field field">
     <%= f.file_field :image %>
   </div>
+  <br>
   <div class="actions">
     <%= f.submit %>
   </div>

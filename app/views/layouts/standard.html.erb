@@ -1,26 +1,17 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-
-<html xmlns = "http://www.w3.org/1999/xhtml">
-
+<!DOCTYPE html>
    <head>
-      <meta http-equiv = "Content-Type" content = "text/html; charset = iso-8859-1" />
-      <meta http-equiv = "Content-Language" content = "en-us" />
       <title>Cat a Load</title>
-      <%= stylesheet_link_tag "application" %>
-      <%= javascript_include_tag "application" %>
+        <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+        <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+        <%= csrf_meta_tags %>
    </head>
 
    <body>
-      <div id = "header">
-         <h1>Cat a Load</h1><h3>Look at all these cats!</h3>
-         <br class="clear">
+      <div class="page-header">
+        <h1>Cat a Load<small>    Look at all these cats!</small></h1>
       </div>
-      <div id = "container">
-         
-         <div id = "content">
+      <div class = "container-fluid">
             <%= yield -%>
-         </div>
       </div>
    </body>
-   
 </html>
