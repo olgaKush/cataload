@@ -1,19 +1,18 @@
 <p id="notice"><%= notice %></p>
 
 <div id="cats">
-    <% @cats.each do |cat| %>
-        <div class="cat">
-            <%= image_tag cat.image_url.to_s %>
-            <div class="name"><b>Name:</b> <%= cat.name %></div>
-            <div class="race"><b>Race:</b> <%= cat.race %></div>
-            <div class="gender"><b>Gender:</b> <%= cat.gender %></div>
-            <div class="color"><b>Color:</b>: <%= cat.color %></div>
-            <div class="actions">
-                <%= link_to 'Show', cat %>
-                <%= link_to 'Edit', edit_cat_path(cat) %>
-                <%= link_to 'Delete', cat, method: :delete, data: { confirm: 'Are you sure?' } %>  
+    <div class="row">
+        <% @cats.each do |cat| %>
+            <div class="cat">
+                <%= link_to cat do %>
+                    <div class="thumbnail">
+                        <%= image_tag cat.image_url.to_s %>
+                    </div>
+                <%end%>
+                <div class="name"><%= cat.name %></div>
             </div>
-        </div>
-    <% end %>
-<p><%= link_to 'Add New Cat', new_cat_path %></p>
+        <% end %>
+        <br class="clear"/>
+    </div>
 </div>
+<div class="lower"><%= link_to '<button type="button">Add new cat</button>'.html_safe, new_cat_path %></div>
