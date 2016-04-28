@@ -1,24 +1,20 @@
+#Welcome to **Cat a Load!**
 
-     ,-----.,--.                  ,--. ,---.   ,--.,------.  ,------.
-    '  .--./|  | ,---. ,--.,--. ,-|  || o   \  |  ||  .-.  \ |  .---'
-    |  |    |  || .-. ||  ||  |' .-. |`..'  |  |  ||  |  \  :|  `--, 
-    '  '--'\|  |' '-' ''  ''  '\ `-' | .'  /   |  ||  '--'  /|  `---.
-     `-----'`--' `---'  `----'  `---'  `--'    `--'`-------' `------'
-    ----------------------------------------------------------------- 
+This app is made for storing some cats images. So go ahead and **Cataload** your fav cat!
+
+##Details
+1. For development works used a VM on **Cloud9**
+2. Developed with **Ruby on Rails 4**
+3. additional gems: **bootstrap-sass**, **carrierwave**
+4. Deployed on Heroku https://hidden-castle-64659.herokuapp.com
+
+##Specs
+You can:
+
+1. See the cats
+* Add a cat
+* Edit a cat
+* Delete a cat
 
 
-Welcome to your Rails project on Cloud9 IDE!
-
-To get started, just do the following:
-
-1. Run the project with the "Run Project" button in the menu bar on top of the IDE.
-2. Preview your new app by clicking on the URL that appears in the Run panel below (https://cataload-olgakush.c9users.io/).
-
-Happy coding!
-The Cloud9 IDE team
-
-
-## Support & Documentation
-
-Visit http://docs.c9.io for support, or to learn more about using Cloud9 IDE. 
-To watch some training videos, visit http://www.youtube.com/user/c9ide
+Original work by **@Copyright** Olga Kushanova - OK
